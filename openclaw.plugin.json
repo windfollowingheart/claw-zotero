@@ -1,0 +1,33 @@
+{
+  "id": "claw-zotero",
+  "kind": "channel",
+  "channels": ["claw-zotero"],
+  "name": "claw-zotero",
+  "description": "Zotero channel plugin",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  },
+  "channelConfigs": {
+    "claw-zotero": {
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "token": { "type": "string" },
+          "allowFrom": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      },
+      "uiHints": {
+        "token": {
+          "label": "Bot token",
+          "sensitive": true
+        }
+      }
+    }
+  }
+}
