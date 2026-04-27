@@ -16,12 +16,6 @@ function getServerUrl(): string {
     return cachedServerUrl;
   }
 
-  // 优先从环境变量读取
-  // if (process.env.ZOTERO_SERVER_URL) {
-  //   cachedServerUrl = process.env.ZOTERO_SERVER_URL;
-  //   return cachedServerUrl;
-  // }
-
   // 从配置文件读取
   if (existsSync(CONFIG_PATH)) {
     try {
